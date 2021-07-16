@@ -95,7 +95,16 @@ p, button {
     border-radius: 50px;
     padding: 1px;
     margin: 10px auto;
-    cursor: pointer;
+    cursor: default;
+    background-color: azure;
+    /* -webkit-tap-highlight-color: transparent; */ 
+    /*
+         To remove blue highlight color on tap on
+         phone use this property -webkit-tap-highlight-color: transparent; but 
+         it is not recommended solution for this is to use cursor pointer
+         on desktops and cursor default on phones
+    */
+    
 }
 
 .con {

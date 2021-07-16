@@ -28,12 +28,21 @@ mp2m.addEventListener("click", () => startMp2m());
 mp2s.addEventListener("click", () => clearInterval(intervalId));
 
 let switchStatus = "off";
+
 swi.addEventListener("click", () => {
     if(switchStatus === "off") {
         con.classList.add("switchon");
         switchStatus = "on";
+        p2Ele.style.backgroundColor = "yellow";
+        switchSomething();
     } else {
         con.classList.remove("switchon");
         switchStatus = "off";
+        p2Ele.style.backgroundColor = "rgb(241, 34, 162)";
+        switchSomething();
     }
 });
+
+function switchSomething() {
+    console.log(switchStatus);
+}
