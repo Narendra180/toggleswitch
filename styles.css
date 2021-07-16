@@ -1,0 +1,112 @@
+html {
+    box-sizing: border-box;
+}
+
+*,::after,::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: rgb(177, 27, 182);
+    margin-left: auto; /* without width margin-let: auto does not push block element right 
+                          because its width is auto means full width to make it push right
+                          use apply width to element less than viewport.
+                        */ 
+    /* width: 100px; */
+}
+
+h3 {
+    background-color: rgb(20, 119, 119);
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+p, button {
+    margin: 10px;
+}
+
+.p1div {
+    text-align: left;
+}
+
+.p1 {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    text-align: initial;
+}
+
+.p1divright {
+    text-align: right;
+}
+
+.p2 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(241, 34, 162);
+    transition: margin 1s ease-in-out;
+}
+
+
+.p2moveright {
+    margin-left: calc(100% - 100px);
+}
+
+.pdiv {
+    height: 150px;
+    width: 150px; 
+    text-align: center;
+    padding: 25px;
+    margin-left: calc(50% - 150px/2);
+}
+
+.pdiv p {
+    background-color: rgb(39, 175, 26);
+    width: 100px;
+    height: 100px;
+    margin: 0px;
+    /* display: inline-block; */
+}
+
+.colorP {
+    font-size: 2em;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: color 1s ease-in-out;
+}
+
+.colorpChange {
+    color: blue;
+}
+
+#switch {
+    width: 120px;
+    height: 50px;
+    font-size: 2em;
+    border: 2px solid black;
+    border-radius: 50px;
+    padding: 1px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+
+.con {
+    width: 50px;
+    height: 100%;
+    background-color: red;
+    border-radius: 100px;
+    transition: background,margin 0.4s ease-in-out;
+}
+
+.switchon {
+    background-color: yellowgreen;
+    margin-left: auto;
+}
