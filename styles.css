@@ -10,7 +10,7 @@ html {
 
 h1 {
     color: rgb(177, 27, 182);
-    margin-left: auto; /* without width margin-let: auto does not push block element right 
+    margin-left: auto; /* without width margin-left: auto does not push block element right 
                           because its width is auto means full width to make it push right
                           use apply width to element less than viewport.
                         */ 
